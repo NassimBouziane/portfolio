@@ -7,7 +7,7 @@ export default function Header() {
   }
 
   return (
-    <div className="grid grid-cols-2 shadow-lg">
+    <div className="grid grid-cols-2 shadow-lg w-full">
       <img
         className="w-[50px] h-[50px] ml-[1%] mt-[1%] mb-[1%] m-auto "
         src="Logo.png"

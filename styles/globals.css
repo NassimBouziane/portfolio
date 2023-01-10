@@ -6,3 +6,50 @@
  *{
     scroll-behavior: smooth;
  }
+button{
+   font-weight: 400;
+}
+
+
+.Title {
+   animation: 2s anim-Y ease-out forwards;
+ }
+ @keyframes anim-Y {
+   
+   0% {
+     opacity: 0;
+     transform: translateY(80%);
+   }
+   20% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+     transform: translateY(0%);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0%);
+   }
+ }
+ .Presentation {
+   animation: 5s anim-X ease-out forwards;
+ }
+ @keyframes anim-X {
+   0% {
+      opacity: 0;
+      transform: translateX(-80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+
+ }
