@@ -7,16 +7,16 @@ export default function Header() {
   }
 
   return (
-    <div className="flex">
+    <div className="grid grid-cols-2 shadow-lg">
       <img
-        className="w-[50px] h-[50px] ml-[1%] mt-[1%] m-auto"
+        className="w-[50px] h-[50px] ml-[1%] mt-[1%] mb-[1%] m-auto "
         src="Logo.png"
         alt="Logo of Nassim Bouziane inspired by the javascript logo"
       ></img> 
-      <div className="flex items-center gap-4">
-      <button className="h-[10px] whitespace-nowrap"> A propos</button>
-      <button className="h-[10px]"> Compétences</button>
-      <button className="h-[10px] mx-4"> Projets</button>
+      <div className=" flex justify-evenly items-center">
+      <button className="hover:-rotate-12 hover:text-2xl " > À propos</button>
+      <button className="hover:-rotate-12 hover:text-2xl"> Compétences</button>
+      <button className="hover:-rotate-12 hover:text-2xl"> Projets</button>
       </div>
     </div>
   );
