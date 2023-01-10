@@ -12,10 +12,10 @@ export default function Header() {
       <img
         className="w-[50px] h-[50px] ml-[1%] mt-[1%] mb-[1%] m-auto "
         src="Logo.png"
-        alt="Logo of Nassim Bouziane inspired by the javascript logo"
+        alt="Logo of Nassim Bouziane inspired by the typescript logo"
       ></img> 
       <div className=" flex justify-evenly items-center">
-      <button className="hover:hover:text-xl " > À propos</button>
+      <button className="hover:hover:text-xl "  onClick={(e) => scrollto(900)}> À propos</button>
       <button className="hover:hover:text-xl"> Compétences</button>
       <button className="hover:hover:text-xl"> Projets</button>
       </div>

@@ -10,8 +10,8 @@
   }
 
 body {
-  position: fixed;
-  overflow-y:scroll;
+  position: relative;
+  overflow-y:auto;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -28,7 +28,7 @@ button{
 }
 
 .Title {
-   animation: 2s anim-Y ease-out forwards;
+   animation: 3s anim-Y ease-out forwards;
  }
  @keyframes anim-Y {
    
