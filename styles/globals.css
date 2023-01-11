@@ -31,7 +31,8 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: #caccd4;
+  background-color: #dee0e9;
+  /*  COULEUR GRISE #caccd4 */
 }
 
  *{
@@ -90,6 +91,7 @@ button{
     }
 
  }
+
  .PresentationInfinite {
   animation: 5s anim-XInfinite ease-out infinite;
 }
@@ -205,3 +207,4 @@ button{
   } */
   
  }
+ 
