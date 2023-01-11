@@ -155,10 +155,26 @@ button{
     /* changing the grid navbar to a flex */
     display: flex; 
   }
+  .chest_img {
+    animation: none;
+   
+  }
+
+ }
+ @media screen and (max-width: 1100px) and (min-width: 748px) {
+  /* .flex_competences{
+    flex-wrap: wrap;
+  } */
+.flex_competences{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
  }
  
+ 
 
- @media screen and (max-width: 1600px) and (min-width: 750px) {
+ @media screen and (max-width: 1920px) and (min-width: 750px) {
   .flottant{
     width: 300px;
   }

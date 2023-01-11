@@ -12,46 +12,46 @@ export default function APropos() {
   }, [inView]);
 
   return (
-    <div  className="relative top-[250px]" ref={ref} id="Apropos">
+    <div  className="relative top-[250px] " ref={ref}>
       {" "}
       <h1
         className={
-          inView ? "Presentation text-6xl text-bold ml-[5%]" : "hidden"
+          inView ? "Presentation text-6xl text-bold ml-[5%]" : "flex"
         }
       >
         {" "}
         À propos{" "}
       </h1>{" "}
       <Tab.Group >
-        <Tab.List className="mt-[5%] ml-[5%] flex flex-row gap-20" >
+        <Tab.List className="mt-[5%] ml-[5%] flex flex-row gap-5 md:gap-20" >
           <Tab
           
             id="test"
-            className="PressStart text-xl  text-gray-500 focus:text-black focus:outline-none"
+            className="PressStart text-[10px] md:text-xl  text-gray-500 focus:text-black focus:outline-none"
           >
             Mon histoire
           </Tab>
-          <Tab className="PressStart text-xl text-gray-500 focus:text-black focus:outline-none">
+          <Tab className="PressStart text-[10px] md:text-xl text-gray-500 focus:text-black focus:outline-none">
             Expérience
           </Tab>
-          <Tab className="PressStart text-xl text-gray-500 focus:text-black focus:outline-none">
+          <Tab className="PressStart text-[10px]  md:text-xl text-gray-500 focus:text-black focus:outline-none">
             Education
           </Tab>
         </Tab.List>
         <div className="flex">
-        <Tab.Panels className="ml-10 mt-10 w-[50%]" >
-          <Tab.Panel>
+        <Tab.Panels className="ml-10 mt-10 w-[100%]" >
+          <Tab.Panel className="text-[18px] sm:text-2xl md:text-3xl">
             Depuis mon plus jeune âge, j'ai toujours été intrigué par le monde
             qui m'entoure et j'ai une soif inextinguible d'apprendre de
             nouvelles choses. Cette curiosité m'a poussé à explorer différents
             domaines, mais c'est finalement dans{" "}
-            <strong className="PressStart text-xs">
+            <strong className="PressStart  text-[14px] sm:text-2xl md:text-1xl">
               {" "}
               le développement informatique
             </strong>{" "}
             que j'ai trouvé ma passion. <br /> <br />
             Tout a commencé avec ma fascination pour{" "}
-            <strong className="PressStart text-xs">les jeux vidéo</strong>. Je
+            <strong className="PressStart text-[14px] sm:text-2xl md:text-1xl">les jeux vidéo</strong>. Je
             passais des heures à découvrir les différents aspects de ces univers
             virtuels, et c'est alors que j'ai compris que ce qui m'intéressait
             le plus était la façon dont ils étaient créés. C'est à ce moment-là
@@ -64,13 +64,13 @@ export default function APropos() {
             permis de développer mes compétences de communication et de
             collaboration. <br /> <br />
             Aujourd'hui, je suis fier de ce que j'ai accompli jusqu'à présent,
-            et je suis impatient de <strong>poursuivre</strong> mon parcours
+            et je suis impatient de <strong className="text-[18px] sm:text-2xl md:text-3xl">poursuivre</strong> mon parcours
             dans le développement informatique. J'espère que cette section de
             mon portfolio vous donnera un aperçu de mon parcours et de{" "}
-            <strong>ma passion pour l'apprentissage et la découverte.</strong>
+            <strong className="text-[18px] sm:text-2xl md:text-3xl">ma passion pour l'apprentissage et la découverte.</strong>
           </Tab.Panel>
 
-          <Tab.Panel>
+          <Tab.Panel className="text-[18px] sm:text-2xl md:text-3xl">
             Formation continue à l'ETNA, où j'ai été plongé dans un
             environnement de projet de développement web intense. J'ai participé
             à de nombreux projets en équipe qui se sont étalés sur des périodes
@@ -99,15 +99,15 @@ export default function APropos() {
               className="inline-block PresentationInfinite"
             ></img>
           </Tab.Panel>
-          <Tab.Panel >
+          <Tab.Panel className="text-[18px] sm:text-2xl md:text-3xl">
             1 an de fac d'informatique mathématiques à l'université d'Evry, où
             j'ai principalement travaillé avec les technologies{" "}
-            <strong>HTML</strong>, <strong>CSS</strong> et{" "}
-            <strong>JavaScript</strong>. Ce cursus m'a permis de comprendre les
+            <strong className="text-[18px] sm:text-2xl md:text-3xl" >HTML</strong>, <strong className="text-[8px] md:text-3xl">CSS</strong> et{" "}
+            <strong className="text-[18px]  sm:text-2xl md:text-3xl">JavaScript</strong>. Ce cursus m'a permis de comprendre les
             fondamentaux du développement web, et j'ai été capable de créer des
             sites web simples en utilisant ces technologies. <br /> <br />
             Actuellement, j'ai changé mon parcours de formation pour continuer à
-            l'<strong>ETNA</strong> où je suis en formation continue pour
+            l'<strong className="text-[18px] sm:text-2xl md:text-3xl">ETNA</strong> où je suis en formation continue pour
             améliorer mes compétences en développement web. J'ai pu découvrir
             des technologies plus modernes comme le framework React et Next.js,
             ainsi que le langage de programmation TypeScript, qui m'ont permis
@@ -119,15 +119,14 @@ export default function APropos() {
           </Tab.Panel>
         </Tab.Panels>
         <div > <img  src="chest.png" alt="A retro chest image" className={
-          inView ? "Presentation" : "hidden"
+          inView ? "Presentation chest_img" : "hidden"
         }></img>
       </div>
       </div>
       </Tab.Group>
       
-      <h1 className="mb-[600px]"></h1>
+      <h1 className="mb-[300px] mt-[300px]" id="Apropos"></h1>
     </div>
   );
 }
 
-// 1000px pour le propos <h1 className="mb-[1000px]"></h1>

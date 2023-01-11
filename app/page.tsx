@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <Header />
       <Presentation />
-      <APropos/>
+      <APropos />
       <Competences />
     </>
   )
