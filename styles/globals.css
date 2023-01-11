@@ -48,7 +48,7 @@ button{
 }
 
 .Title {
-   animation: 3s anim-Y ease-out forwards;
+   animation: 3s anim-Y linear forwards;
  }
  @keyframes anim-Y {
    

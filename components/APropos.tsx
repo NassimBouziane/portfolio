@@ -1,18 +1,23 @@
 import { useInView } from "react-intersection-observer";
 import { Tab } from '@headlessui/react'
+import { useEffect, useRef } from "react";
 
 
 export default function APropos() {
-  const [ref, inView] = useInView({ threshold: 0.1 })
+  const [ref, inView] = useInView({ threshold: 0.0001 })
+  useEffect(() => {
+    {inView ? document.getElementById('test')?.focus() : undefined};
+  },[inView])
+
   return (
-    <div className="relative top-[250px]" ref={ref}>
+    <div id="Apropos" className="relative top-[250px]"  ref={ref}>
       {" "}
-      <h1 className= {inView ? "Presentation text-6xl text-bold ml-[5%] ": undefined}> À propos </h1>{" "}
+      <h1  className= {inView ? "Presentation text-6xl text-bold ml-[5%]": undefined}> À propos </h1>{" "}
 
       <Tab.Group>
       <Tab.List className="mt-[5%] ml-[5%] flex flex-row gap-20">
-        <Tab autoFocus className="PressStart text-xl text-gray-500 focus:text-black focus:outline-none">Mon histoire</Tab>
-        <Tab className="PressStart text-xl text-gray-500 focus:text-black focus:outline-none">Expérience</Tab>
+        <Tab id="test" className="PressStart text-xl  text-gray-500 focus:text-black focus:outline-none">Mon histoire</Tab>
+        <Tab  className="PressStart text-xl text-gray-500 focus:text-black focus:outline-none">Expérience</Tab>
         <Tab className="PressStart text-xl text-gray-500 focus:text-black focus:outline-none">Education</Tab>
       </Tab.List>
       <Tab.Panels className="ml-10 mt-10 w-[50%]">
