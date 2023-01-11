@@ -4,10 +4,14 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Presentation from '../components/presentation';
 import APropos from '../components/APropos';
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 
 export default function Home() {
+  useEffect(() => {
+    // Met à jour le titre du document via l’API du navigateur
+    document.title = ` Nassim BOUZIANE - Portfolio`;
+  },[]);
   return (
     <>
       <Head>
