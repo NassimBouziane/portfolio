@@ -24,7 +24,10 @@ body::-webkit-scrollbar-thumb {
 	background-color: rgb(0, 0, 0);
 }
    
-
+.box_project{
+  box-shadow: 6px 0 black, -6px 0 black, 0 -6px black, 0 6px black;
+  margin: 6px auto;
+}
 body {
   position: relative;
   overflow-y:auto;
@@ -48,20 +51,7 @@ button{
   font-family: 'PressStart', cursive;
 }
 
-.tag {
-  display: inline-block;
-  border-radius: 3px;
-  padding: .2em .5em .3em;
-  border-radius: 2px;
-  background: var(--tag-bg);
-  color: var(--text-color);
-  font-weight: 600;
-  margin: .25em .1em
-}
-.tag-react {
-  color: #00d8ff;
-  background: #222
-}
+
 .Title {
    animation: 3s anim-Y linear forwards;
  }
@@ -83,6 +73,27 @@ button{
      transform: translateY(0%);
    }
  }
+ .TitleInfinite {
+  animation: 3s anim-Y_Infinite linear infinite;
+}
+@keyframes anim-Y_Infinite {
+  
+  0% {
+    opacity: 1;
+    transform: translateY(30%);
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(30%);
+  }
+}
  
  .Presentation {
    animation: 2s anim-X ease-out forwards;
@@ -127,7 +138,18 @@ button{
    }
 
 }
-
+.flex_Project_card{
+  display: flex;
+}
+.flex_Project_card:nth-child(n+3){
+  filter: blur(4px);
+}
+.flex_Project_card:nth-child(n+5){
+  position: absolute; top: -9999px; left: -9999px;
+}
+.test{
+  display: inline;
+}
  .flottant {
   animation: 10s anim-Flottant ease-out infinite;
  }
