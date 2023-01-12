@@ -6,6 +6,7 @@ import Presentation from '../components/presentation';
 import APropos from '../components/APropos';
 import React, { useEffect, useRef } from "react";
 import Competences from '../components/competences';
+import Mesprojets from '../components/mesprojets';
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <Presentation />
       <APropos />
       <Competences />
+      <Mesprojets />
     </>
   )
 }

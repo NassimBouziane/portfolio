@@ -6,9 +6,11 @@ export default function Header() {
   function scrollto(top: any,e:any) {
     //window.scrollTo({ top: top, left: 0, behavior: "smooth"});
     if(e._reactName == "onClick"){
-    var elem = document.getElementById(e.toString());
+    var elem = document.getElementById("competences");
+    console.log(elem);
     //elem ? window.scrollTo(0, elem.offsetTop) : null;
-      elem ? elem.scrollIntoView({ block:"start", behavior:"smooth", inline:"end"}) : null;
+    //elem ? elem.scrollIntoView({ block:"end", behavior:"smooth", inline:"end"}) : null;
+    window.moveTo(0,window.innerHeight);
 
     }
     
@@ -23,7 +25,7 @@ export default function Header() {
         alt="Logo of Nassim Bouziane inspired by the typescript logo"
       ></img> 
       <div className=" flex justify-evenly items-center">
-      <button className="hover:hover:text-xl  "  onClick={(e) => scrollto(10000,"competences")}>  À propos  </button> &nbsp;
+      <button className="hover:hover:text-xl  "  onClick={(e) => scrollto(10000,e)}>  À propos  </button> &nbsp;
       <button className="hover:hover:text-xl"> Compétences</button> &nbsp;
       <button className="hover:hover:text-xl"> Projets</button>
       

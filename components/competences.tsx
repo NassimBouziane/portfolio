@@ -71,7 +71,7 @@ export default function Competences() {
       </div>
       </Tab.Group>
         
-      <h1 className="mb-[600px]"></h1>
+      <h1 className="mb-[400px]"></h1>
         </div>
     )
 }
