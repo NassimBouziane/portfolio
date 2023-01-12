@@ -125,7 +125,7 @@ export default function APropos() {
       </div>
       </Tab.Group>
       
-      <h1 className="mb-[30%] mt-[30%]" id="Apropos"></h1>
+      <h1 className="mb-[300px] mt-[300px]" id="Apropos"></h1>
     </div>
   );
 }

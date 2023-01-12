@@ -17,12 +17,6 @@ export default function Presentation() {
           {" "}
           Télécharger le CV
         </a>
-        <img
-        width="650"
-        src="/retro_desktop.png"
-        alt="Image of a retro computeur floating"
-        className="flottant h-fit mt-2 xl "
-      ></img>
       </section>
       <div className="flex_row  flex ">
       <img

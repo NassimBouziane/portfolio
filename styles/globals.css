@@ -48,6 +48,20 @@ button{
   font-family: 'PressStart', cursive;
 }
 
+.tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: .2em .5em .3em;
+  border-radius: 2px;
+  background: var(--tag-bg);
+  color: var(--text-color);
+  font-weight: 600;
+  margin: .25em .1em
+}
+.tag-react {
+  color: #00d8ff;
+  background: #222
+}
 .Title {
    animation: 3s anim-Y linear forwards;
  }
@@ -151,7 +165,7 @@ button{
   .flex {
     flex-wrap: wrap;
   }
-  .grid{ 
+  .grid_Header{ 
     /* changing the grid navbar to a flex */
     display: flex; 
   }
