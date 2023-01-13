@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/gh-pages',
   reactStrictMode: true,
-  basePath: '/portfolio',
-  experimental: {
-    appDir: true,
-  },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

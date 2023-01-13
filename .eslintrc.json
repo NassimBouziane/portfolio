@@ -1,18 +1,24 @@
 {
-  "extends": [
-      "airbnb-base",
-      "airbnb-typescript/base"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": { "project": ["./tsconfig.json"] },
-  "plugins": [
-      "@typescript-eslint"
-  ],
-  "rules": {
-      "no-console": "off",
-      "no-restricted-syntax": "off",
-      "no-param-reassign": "off",
-      "max-len": "off",
-      "linebreak-style": "off"
+    "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "ts": "never"
+        }
+      ],
+      "linebreak-style": "off",
+      "import/no-unresolved": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      }
+    }
   }
-}

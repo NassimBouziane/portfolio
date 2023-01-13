@@ -4,15 +4,15 @@ import { useEffect, useRef } from "react";
 
 export default function APropos() {
   
-  const [ref, inView] = useInView({ threshold: 0.1 });
-  useEffect(() => {
+  const [ref, inView] = useInView({ threshold: 0.3 });
+    useEffect(() => {
     {
-      inView ? document.getElementById("test")?.focus() : undefined;
+      inView ? document.getElementById("test")?.focus() :undefined;
     }
-  }, [inView]);
+  }, []);
 
   return (
-    <div  className="relative top-[250px] " ref={ref}>
+    <div  className="relative top-[250px] " ref={ref} id="apropos">
       {" "}
       <h1
         className={
@@ -125,7 +125,7 @@ export default function APropos() {
       </div>
       </Tab.Group>
       
-      <h1 className="mb-[300px] mt-[300px]" id="Apropos"></h1>
+      <h1 className="mb-[400px] mt-[300px]"></h1>
     </div>
   );
 }

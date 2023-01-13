@@ -1,19 +1,24 @@
 {
-  "name": "my_portfoliov2",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fdi-uxui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "export":"next export",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "next build && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@headlessui/react": "^1.7.7",
     "@headlessui/tailwindcss": "^0.1.2",
     "@material-tailwind/react": "^1.2.5",
+    "@netlify/next": "^1.4.3",
     "@next/font": "13.1.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
@@ -26,6 +31,7 @@
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.4.1",
     "react-scroll": "^1.8.9",
+    "react-scroll-to-top": "^3.0.0",
     "typescript": "4.9.4"
   },
   "devDependencies": {
