@@ -13,7 +13,6 @@ import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   useEffect(() => {
-    // Met à jour le titre du document
     document.title = ` Nassim BOUZIANE - Portfolio`;
   }, []);
   return (
