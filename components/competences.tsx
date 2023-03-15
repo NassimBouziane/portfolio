@@ -22,19 +22,25 @@ export default function Competences() {
         <Tab.List className="mt-[5%] ml-[5%] flex flex-row gap-4  md:gap-32 lg:gap-40">
           <Tab
             id="test"
-            className="PressStart text-[10px] md:text-xl  text-green-500 focus:text-black focus:outline-none"
+            className={`PressStart text-[10px] md:text-xl  text-green-500 focus:text-black focus:outline-none ${
+              src === "bulbusaur.gif" ? "underline underline-offset-4" : ""
+            }`}            
             onClick={() => change_pokemon("bulbusaur.gif")}
           >
             Frameworks
           </Tab>
           <Tab
-            className="PressStart text-[10px] md:text-xl text-red-500 focus:text-black focus:outline-none"
+            className={`PressStart text-[10px] md:text-xl  text-red-500 focus:text-black focus:outline-none ${
+              src === "charmander.gif" ? "underline underline-offset-4" : ""
+            }`}              
             onClick={() => change_pokemon("charmander.gif")}
           >
             Langages
           </Tab>
           <Tab
-            className="PressStart text-[10px] md:text-xl text-blue-500 focus:text-black focus:outline-none"
+            className={`PressStart text-[10px] md:text-xl  text-blue-500 focus:text-black focus:bg-clip-text focus:outline-none ${
+              src === "squirtle.gif" ? "underline underline-offset-4" : ""
+            }`}             
             onClick={() => change_pokemon("squirtle.gif")}
           >
             Autres
@@ -50,10 +56,11 @@ export default function Competences() {
             </Tab.Panel>
 
             <Tab.Panel className="flex_competences">
-              <ProgressBar name="Typescript" progress="100" />
+              <ProgressBar name="Typescript" progress="80" />
               <ProgressBar name="Python" progress="80" />
               <ProgressBar name="HTML/CSS" progress="80" />
               <ProgressBar name="PHP" progress="60" />
+              
             </Tab.Panel>
             <Tab.Panel className="flex_competences">
               <ProgressBar name="MySQL" progress="80" />

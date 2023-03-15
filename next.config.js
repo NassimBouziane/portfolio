@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/gh-pages',
+  basePath: '/My_Portfolio',
   reactStrictMode: true,
 };
 
