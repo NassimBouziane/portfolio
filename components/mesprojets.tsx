@@ -49,6 +49,23 @@ export default function Mesprojets() {
           src="inclu_chat.png"
           descripton="Notre projet pour Inclusion Conseil consistait à créer une solution de calendrier et de chat en temps réel pour améliorer la communication et la coordination interne de l'entreprise. Nous avons utilisé le framework Next.js 13 pour développer l'application web, ainsi que les bibliothèques sockets.io pour le chat en temps réel et Full Calendar JS pour le calendrier. La solution comprenait également une page d'administration pour permettre la gestion des utilisateurs et des événements."
         />
+             <Project_card
+          list={[
+            "https://www.svgrepo.com/show/101606/trophy.svg",
+            "https://lab5com.fr/sites/lab5com.fr/files/svgs/etna.svg?itok=b64df0b9",
+            "https://vectorwiki.com/images/F79rZ__react-native.svg",
+            "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+            "https://vectorwiki.com/images/ScXaS__prisma.svg",
+            "https://vectorwiki.com/images/qBpbX__tailwind-css.svg",
+            "https://vectorwiki.com/images/yESCB__mariadb.svg",
+
+          ]}
+          name="Code camp Mobile : Etnamargement"
+          src="Etnamargement.png"
+          descripton="Etnamargement est une application d'émargement innovante développée avec React Native, une technologie de développement d'applications mobiles multi-plateformes, et une API Express associée à Prisma, une base de données moderne et performante. Cette application permet à l'école ETNA de gérer efficacement la présence de ses étudiants lors des cours et des examens en temps réel.
+
+          Grâce à Etnamargement, les enseignants peuvent facilement prendre la présence des étudiants en scannant leur QR code individuel à l'aide de leur téléphone portable. Les données de présence sont ensuite stockées dans une base de données sécurisée, permettant une gestion facile et rapide des absences."
+        />
 
         <Project_card
           list={[
@@ -119,32 +136,34 @@ export default function Mesprojets() {
             </svg>
           </div>
         </button>
-      )) || (
-        <button onClick={show_more}>
-          <div className="w-[100%] h-[7%] absolute bottom-[0.1%]">
-            {" "}
-            <p className="text-center text-3xl PressStart">
-              {" "}
-              Cliquez pour en voir moins{" "}
-            </p>{" "}
-            <br />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-[100%] h-[4.5rem] TitleInfinite text-center text-6xl"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
-              />
-            </svg>
-          </div>
-        </button>
-      )}
+      ))  
+      // || (
+      //   <button onClick={show_more}>
+      //     <div className="w-[100%] h-[7%] absolute bottom-[0.1%]">
+      //       {" "}
+      //       <p className="text-center text-3xl PressStart">
+      //         {" "}
+      //         Cliquez pour en voir moins{" "}
+      //       </p>{" "}
+      //       <br />
+      //       <svg
+      //         xmlns="http://www.w3.org/2000/svg"
+      //         fill="none"
+      //         viewBox="0 0 24 24"
+      //         stroke-width="1.5"
+      //         stroke="currentColor"
+      //         className="w-[100%] h-[4.5rem] TitleInfinite text-center text-6xl"
+      //       >
+      //         <path
+      //           stroke-linecap="round"
+      //           stroke-linejoin="round"
+      //           d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+      //         />
+      //       </svg>
+      //     </div>
+      //   </button>
+      // )
+      }
     </div>
   );
 }

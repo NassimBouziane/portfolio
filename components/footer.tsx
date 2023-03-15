@@ -17,7 +17,7 @@ export default function Footer() {
           <img className="h-[60px] w-[60px]" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"></img>
           
       </div> 
-      <p className="text-2xl text-white PressStart"> Contact : </p><a href="mailto" className="text-2xl text-white"> bouzia_n@etnaalternance.net</a>
+      <p className="text-2xl text-white PressStart"> Contact : </p><a href="mailto:bouzia_n@etnaalternance.net" className="text-2xl text-white">bouzia_n@etnaalternance.net</a>
       <a href="https://github.com/NassimBouziane"><img className="ml-[90%] xl:w-[10%]" src="https://www.vectorlogo.zone/logos/github/github-icon.svg"></img></a>
       
       </div>

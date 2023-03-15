@@ -43,7 +43,7 @@ export default function Competences() {
         <div className="flex">
           <Tab.Panels className="ml-10 mt-10 w-[50%]">
             <Tab.Panel className="flex_competences">
-              <ProgressBar name="Tailwind" progress="100" />
+              <ProgressBar name="Tailwind" progress="80" />
               <ProgressBar name="React.JS" progress="80" />
               <ProgressBar name="Next.JS" progress="60" />
               <ProgressBar name="Flutter" progress="40" />
@@ -63,6 +63,7 @@ export default function Competences() {
             </Tab.Panel>
           </Tab.Panels>
           <img
+          className="ml-[20%]"
           width={300}
             src={src}
             alt="Image of one of the first starters of pokemon depending on which tab panel you click on"
