@@ -1,15 +1,14 @@
-"use client";
-import React, { LegacyRef, useRef } from "react";
+'use client';
+
+import React from 'react';
+
 export default function Header() {
-  const divRef: any = useRef<HTMLDivElement>();
-  const ref = useRef();
-  function scrollto(id: any,e:any) {
-    //window.scrollTo({ top: top, left: 0, behavior: "smooth"});
-    if (e._reactName == "onClick") {
-      var elem = document.getElementById(id);
-      elem ? window.scrollTo(0, elem.offsetTop - 50) : null;
-      // elem ? elem.scrollIntoView({ block:"end", behavior:"smooth", inline:"end"}) : null;
-      // window.moveTo(0, window.innerHeight);
+  function scrollto(id: any, e:any) {
+    if (e.reactName === 'onClick') {
+      const elem = document.getElementById(id);
+      if (elem) {
+        window.scrollTo(0, elem.offsetTop - 50);
+      }
     }
   }
 
@@ -23,14 +22,14 @@ export default function Header() {
       <div className=" flex justify-evenly items-center">
         <button
           className="hover:hover:text-xl  "
-          onClick={(e) => scrollto('apropos',e)}
+          onClick={(e) => scrollto('apropos', e)}
         >
-          {" "}
-          À propos{" "}
-        </button>{" "}
+          {' '}
+          À propos{' '}
+        </button>{' '}
         &nbsp;
-        <button className="hover:hover:text-xl" onClick={(e) => scrollto('competences',e)}> Compétences</button> &nbsp;
-        <button className="hover:hover:text-xl"onClick={(e) => scrollto('projets',e)}> Projets</button>
+        <button className="hover:hover:text-xl" onClick={(e) => scrollto('competences', e)}> Compétences</button> &nbsp;
+        <button className="hover:hover:text-xl"onClick={(e) => scrollto('projets', e)}> Projets</button>
       </div>
     </div>
   );

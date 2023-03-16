@@ -97,7 +97,7 @@ button{
 }
  
  .Presentation {
-   animation: 2s anim-X ease-out forwards;
+   animation: 0.5s anim-X ease-out forwards;
  }
  @keyframes anim-X {
    0% {
