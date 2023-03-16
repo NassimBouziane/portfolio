@@ -181,6 +181,9 @@ button{
   .flex_row img {
    display: none;
   }
+  .flex_row a{
+    display: none;
+  }
   .flex_collum {
 
     gap:0;  
