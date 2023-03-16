@@ -30,8 +30,10 @@ export default function Presentation() {
           src="photov2.png"
           alt="A Image of me"
           className="rounded-[10%] h-fit "
-        ></img>
-      </div>
+        ></img> 
+        <a href="https://www.codewars.com/users/Hitochu" target="_blank" className="flex flex-col items-center text-lg mt-4">Mon CodeWars
+        <img className="mt-2" src="https://www.codewars.com/users/Hitochu/badges/large?theme=light"></img></a>
+      </div>  
     </div>
   );
 }
