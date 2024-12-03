@@ -1,19 +1,18 @@
-"use client";
-import Head from "next/head";
+'use client';
 
-import Header from "../components/header";
-import Presentation from "../components/presentation";
-import WorkExperience from "../components/WorkExperience";
-import Education from "../components/Education";
-import React, { useEffect, useRef } from "react";
-import Competences from "../components/competences";
-import Mesprojets from "../components/mesprojets";
-import Footer from "../components/footer";
-import ScrollToTop from "react-scroll-to-top";
+import Head from 'next/head';
 
+import React from 'react';
+import ScrollToTop from 'react-scroll-to-top';
+import Header from '../components/header';
+import Presentation from '../components/presentation';
+import WorkExperience from '../components/WorkExperience';
+import Education from '../components/Education';
+import Competence from '../components/Competence';
+import PersonnalProject from '../components/PersonnalProject';
+import Footer from '../components/footer';
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -26,15 +25,15 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
           rel="stylesheet"
         />
-        
+
       </Head>
-      <ScrollToTop style={{right:'60px'}} smooth top={300} component={<img src="Logo.png"></img>} />
+      <ScrollToTop style={{ right: '60px' }} smooth top={300} component={<img src="Logo.png"></img>} />
       <Header />
       <Presentation />
       <WorkExperience />
       <Education />
-      <Competences />
-      <Mesprojets />
+      <Competence />
+      <PersonnalProject />
       <Footer />
     </>
   );

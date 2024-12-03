@@ -1,13 +1,13 @@
-import { useRef } from "react";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import { useRef } from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 export default function Education() {
   const sectionRef = useRef(null);
 
   return (
     <div className="" ref={sectionRef} id="education">
-      <h1 className={"Presentation text-5xl text-bold ml-[5%] mb-[5%] opacity-100 translate-y-0"}>
+      <h1 className={'Presentation text-5xl text-bold ml-[5%] mb-[5%] opacity-100 translate-y-0'}>
         Éducation
       </h1>
       <VerticalTimeline>
@@ -20,7 +20,7 @@ export default function Education() {
             borderRadius: '10px',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
             padding: '20px',
-            border: '1px solid #e0e0e0'
+            border: '1px solid #e0e0e0',
           }}
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
@@ -28,7 +28,7 @@ export default function Education() {
           date={<span style={{ color: '#333' }}>Jan 2025 - Oct 2026</span>}
                     icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
 
-          iconOnClick={() => window.open("https://www.etna.io/")}
+          iconOnClick={() => window.open('https://www.etna.io/')}
         >
           <h3 className="vertical-timeline-element-title text-lg font-semibold">
             Master Architecte logiciel, développeur d’application
@@ -50,7 +50,7 @@ export default function Education() {
             borderRadius: '10px',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
             padding: '20px',
-            border: '1px solid #e0e0e0'
+            border: '1px solid #e0e0e0',
           }}
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
@@ -58,9 +58,9 @@ export default function Education() {
           date={<span style={{ color: '#333' }}>Sep 2022 - Jan 2025</span>}
                     icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
 
-          iconOnClick={() => window.open("https://www.etna.io/")}
+          iconOnClick={() => window.open('https://www.etna.io/')}
         >
-            
+
           <h3 className="vertical-timeline-element-title text-lg font-semibold">
             Bachelor Concepteur développeur d'applications
           </h3>
@@ -81,7 +81,7 @@ export default function Education() {
             borderRadius: '10px',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
             padding: '20px',
-            border: '1px solid #e0e0e0'
+            border: '1px solid #e0e0e0',
           }}
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
@@ -89,7 +89,7 @@ export default function Education() {
           date={<span style={{ color: '#333' }}>Sep 2020 - Jun 2022</span>}
                     icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
 
-          iconOnClick={() => window.open("https://www.universite-paris-saclay.fr/")}
+          iconOnClick={() => window.open('https://www.universite-paris-saclay.fr/')}
         >
           <h3 className="vertical-timeline-element-title text-lg font-semibold">
             Licence informatique
@@ -111,7 +111,7 @@ export default function Education() {
             borderRadius: '10px',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
             padding: '20px',
-            border: '1px solid #e0e0e0'
+            border: '1px solid #e0e0e0',
           }}
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
@@ -119,7 +119,7 @@ export default function Education() {
           date={<span style={{ color: '#333' }}>2019 - 2020</span>}
                     icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
 
-          iconOnClick={() => window.open("https://www.ac-aix-marseille.fr")}
+          iconOnClick={() => window.open('https://www.ac-aix-marseille.fr')}
         >
           <h3 className="vertical-timeline-element-title text-lg font-semibold">
             Baccalauréat scientifique
