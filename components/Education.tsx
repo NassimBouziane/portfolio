@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import ReactDOMServer from 'react-dom/server';
 
 export default function Education() {
   const sectionRef = useRef(null);
@@ -26,8 +25,8 @@ export default function Education() {
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
           }}
-          date={ReactDOMServer.renderToStaticMarkup(<span style={{ color: '#333' }}>Jan 2025 - Oct 2026</span>)}
-          icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
+          date={'Jan 2025 - Oct 2026'}
+          icon={<span className="vertical-timeline-element-icon bounce-in hover:scale-125 transition-all duration-300" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
           iconOnClick={() => window.open('https://www.etna.io/')}
         >
           <h3 className="vertical-timeline-element-title text-lg font-semibold">
@@ -55,8 +54,8 @@ export default function Education() {
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
           }}
-          date={ReactDOMServer.renderToStaticMarkup(<span style={{ color: '#333' }}>Sep 2022 - Jan 2025</span>)}
-                    icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
+          date={'Sep 2022 - Jan 2025'}
+                    icon={<span className="vertical-timeline-element-icon bounce-in hover:scale-125 transition-all duration-300" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
 
           iconOnClick={() => window.open('https://www.etna.io/')}
         >
@@ -86,8 +85,8 @@ export default function Education() {
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
           }}
-          date={ReactDOMServer.renderToStaticMarkup(<span style={{ color: '#333' }}>Sep 2020 - Jun 2022</span>)}
-                    icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
+          date={'Sep 2020 - Jun 2022'}
+                    icon={<span className="vertical-timeline-element-icon bounce-in hover:scale-125 transition-all duration-300" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
 
           iconOnClick={() => window.open('https://www.universite-paris-saclay.fr/')}
         >
@@ -116,8 +115,8 @@ export default function Education() {
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
           }}
-          date={ReactDOMServer.renderToStaticMarkup(<span style={{ color: '#333' }}>2019 - 2020</span>)}
-                    icon={<span className="vertical-timeline-element-icon bounce-in" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
+          date={'2019 - 2020'}
+                    icon={<span className="vertical-timeline-element-icon bounce-in hover:scale-125 transition-all duration-300" style={{ background: 'rgb(245, 0, 87)', color: 'rgb(255, 255, 255)' }}><svg className="jss74" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>}
 
           iconOnClick={() => window.open('https://www.ac-aix-marseille.fr')}
         >

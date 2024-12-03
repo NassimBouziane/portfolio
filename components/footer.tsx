@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Footer() {
   return (
-    <div className="">
+    <div className="relative">
       {' '}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="-mb-1">
         <path
           fill="#273036"
           fillOpacity="0.9"
@@ -19,7 +20,6 @@ export default function Footer() {
       </div>
       <p className="text-2xl text-white PressStart"> Contact : </p><a href="mailto:bouzianenassim17102002@gmail.com" className="text-2xl text-white">bouzianenassim17102002@gmail.com</a>
       <a href="https://github.com/NassimBouziane"><img className="ml-[90%] xl:w-[10%]" src="https://www.vectorlogo.zone/logos/github/github-icon.svg"></img></a>
-
       </div>
     </div>
   );

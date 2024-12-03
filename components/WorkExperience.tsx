@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import ReactDOMServer from 'react-dom/server';
 
 export default function WorkExperience() {
   const sectionRef = useRef(null);
@@ -27,8 +26,8 @@ export default function WorkExperience() {
           contentArrowStyle={{
             borderRight: '7px solid  #ffffff',
           }}
-          date={ReactDOMServer.renderToStaticMarkup(<span style={{ color: '#333' }}>Mai 2023 - Jan 2024</span>)}
-          icon={<img src="https://cdn.jaimelesstartups.fr/wp-content/uploads/2022/03/Logo%20de%20la%20startup%20OMAJ.png" alt="omaj's logo" className="rounded-full hover:scale-110 hover:opacity-80 transition-all duration-300"/>}
+          date="Mai 2023 - Jan 2024"
+          icon={<img src="https://cdn.jaimelesstartups.fr/wp-content/uploads/2022/03/Logo%20de%20la%20startup%20OMAJ.png" alt="omaj's logo" className="rounded-full hover:scale-125 transition-all duration-300"/>}
           iconOnClick={() => window.open('https://omaj.fr/')}
         >
           <h3 className="vertical-timeline-element-title text-lg font-semibold">

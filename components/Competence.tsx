@@ -21,11 +21,12 @@ export default function Competence() {
     },
     {
       title: (<span>
-      <span className="text-yellow-500">JavaScript</span>{' '}
-      <span className="text-blue-500">/ TypeScript</span>
+      <span className="text-[#c28e1f]">JavaScript</span>{' '}
+      /{' '}
+      <span className="text-[#007acc]">TypeScript</span>
     </span>
       ),
-      bgColor: 'bg-yellow-400',
+      bgColor: 'bg-[#c28e1f]',
       textColor: '',
       svg: (
         <svg
