@@ -8,7 +8,7 @@ export default function ProjectCard(props: any) {
       id="TESTO"
     >
       <img
-        src={`/${props.src}`}
+        src={props.src}
         alt="image of project presented"
         className="w-[100%] max-h-[300px] xl:max-h-[600px]"
       ></img>
