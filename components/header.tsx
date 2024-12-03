@@ -1,14 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
+
 'use client';
 
 import React from 'react';
 
 export default function Header() {
-  function scrollto(id: any, e:any) {
-    if (e.reactName === 'onClick') {
-      const elem = document.getElementById(id);
-      if (elem) {
-        window.scrollTo(0, elem.offsetTop - 50);
-      }
+  function scrollToDiv(id: string) {
+    const elem = document.getElementById(id);
+    if (elem) {
+      window.scrollTo(0, elem.offsetTop - 50);
     }
   }
 
@@ -22,14 +22,14 @@ export default function Header() {
       <div className=" flex justify-evenly items-center">
         <button
           className="hover:hover:text-xl  "
-          onClick={(e) => scrollto('apropos', e)}
+          onClick={() => scrollToDiv('apropos')}
         >
           {' '}
           À propos{' '}
         </button>{' '}
         &nbsp;
-        <button className="hover:hover:text-xl" onClick={(e) => scrollto('competences', e)}> Compétences</button> &nbsp;
-        <button className="hover:hover:text-xl"onClick={(e) => scrollto('projets', e)}> Projets</button>
+        <button className="hover:hover:text-xl" onClick={() => scrollToDiv('competences')}> Compétences</button> &nbsp;
+        <button className="hover:hover:text-xl"onClick={() => scrollToDiv('projets')}> Projets</button>
       </div>
     </div>
   );
