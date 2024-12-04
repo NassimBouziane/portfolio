@@ -1,7 +1,7 @@
 export default function Presentation() {
   return (
     <div className="flex flex_collum flex-row relative top-[100px] w-fit gap-8 overflow-hidden ">
-      <section className="flex flex-col ml-[10%] w-[50%]">
+      <section className="flex flex-col ml-[10%] w-[80%] md:w-[50%]">
         <h1 className="Title text-lg md:text-6xl font-thin translate-x-96 ">
           {' '}
           &nbsp; &nbsp;Développeur Fullstack{' '}

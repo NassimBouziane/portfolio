@@ -18,8 +18,8 @@ export default function ProjectCard(props: any) {
         <p className="m-[10px]"> {props.descripton}</p>
         <div className=" ml-5 mb-5 mt-5 flex">
           {list
-            ? list.map((element: string) => (
-                  <div>
+            ? list.map((element: string, index: number) => (
+                  <div key={index}>
                     <img src={element} className="w-12 h-12 ml-3" alt='Image of technologies used in the project'></img>
                   </div>
             ))
