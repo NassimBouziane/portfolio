@@ -11,6 +11,8 @@ export default function Header() {
     const elem = document.getElementById(id);
     if (elem) {
       window.scrollTo(0, elem.offsetTop - 50);
+
+      setIsMenuOpen(!isMenuOpen);
     }
   }
 

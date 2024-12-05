@@ -113,7 +113,7 @@ export default function PersonnalProject() {
       </div>
       {(!isShow && (
         <button onClick={showMore}>
-          <div className="w-[100%] h-[14%] absolute bottom-[0.1%]">
+          <div className="w-[100%] h-[14%] absolute bottom-[8%]">
             <p className="text-center text-3xl PressStart">
               Cliquez pour en voir plus{' '}
             </p>{' '}
