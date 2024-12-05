@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-page-custom-font */
+
 'use client';
 
 import Head from 'next/head';

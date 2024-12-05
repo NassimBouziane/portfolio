@@ -267,3 +267,7 @@ button{
  .vertical-timeline-element-date {
   color: crimson;
 }
+
+body {
+  overflow-x: hidden;
+}
